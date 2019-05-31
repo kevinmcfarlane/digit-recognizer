@@ -1,6 +1,6 @@
 # Digit Recognizer
 
-A "from-the-ground-up" implementation of the Kaggle [Digit Recognizer] problem.
+A "from-the-ground-up" implementation of the Kaggle [Digit Recognizer] problem in machine learning.
 
 This is a Python implementation of the initial hand-coded C# solution provided by Mathias Brandewinder in his book, _[Machine Learning Projects for .NET Developers]_.
 
