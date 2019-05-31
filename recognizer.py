@@ -27,7 +27,6 @@ class DataReader:
 
         comma_separated = data.strip().split(",")
         label = comma_separated[0]
-        #pixels = comma_separated[1:]
 
         # Get pixels as integers (we need to perform calculations later)
         pixels = [int(pixel) for pixel in comma_separated[1:]]
@@ -54,19 +53,7 @@ class DataReader:
         return list(data)
         
 class Distance:
-    """
-    Determines how different two images are by computing the "distance" between two arrays of pixels.
-    This will use some algorithm such that the smaller the nunber the more similar are the images. 
-    Distance also corresponds to 'cost' in the ML terminology.
-    """
     def between(self, pixels1, pixels2):
-        """
-        Calculate the distance between two arrays of pixels.
-
-        Args:
-            pixels1 (list): The pixels respresenting the first image.
-            pixels2 (list): The pixels respresenting the second image.
-        """
         pass
 
 class ManhattanDistance(Distance):
