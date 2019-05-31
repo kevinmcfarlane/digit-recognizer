@@ -13,5 +13,29 @@ down by a human, and scanned in 28 x 28 pixels resolution, encoded in grayscale,
 
 The solution provided here does not use any libraries, hence the designation "from-the-ground-up." 
 
+The output will look something like:
+
+Digit: 8 - Match
+
+Digit: 7 - Match
+
+Digit: 2 - Match
+
+Digit: 6 - Match
+
+Digit: 3 - Match
+
+Digit: 1 - Match
+
+Digit: 2 - Match
+
+...
+
+...
+
+Digit: 4 - Mismatch
+
+Correctly classified: 96.30%
+
 [Machine Learning Projects for .NET Developers]: <https://www.apress.com/gb/book/9781430267676>
 [Digit Recognizer]: <https://www.kaggle.com/c/digit-recognizer/overview>
