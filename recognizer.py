@@ -162,7 +162,7 @@ class Evaluator:
             observation: The observation instance.
             classifier: The classifier instance.
         """
-        print("Label: ", observation.label, end = " - ")
+        print("Digit: ", observation.label, end = " - ")
         
         if classifier.predict(observation.pixels) == observation.label:
             print("Match")
@@ -189,7 +189,7 @@ def main():
         correct = Evaluator().correct(validation, classifier)
         print("Correctly classified: {0:.02%}".format(correct))
 
-        print("time elapsed = {0:f} sec.\n".format((datetime.now() - t0).seconds))
+        print("Time elapsed = {0:f} sec.\n".format((datetime.now() - t0).seconds))
 
     except Exception:
         traceback.print_exc()
