@@ -17,7 +17,7 @@ The cost function used is [Manhattan distance].
 
 ![Manhattan Distance](manhattan-distance.png)
 
-The cost function is a measure of how close the model's prediction is to the actual value. So the closer to zero the above function evaluates to the more accurate the prediction. 
+The cost function is a measure of how close the model's prediction is to the actual value. So the closer to zero the above function evaluates the more accurate the prediction. 
 
 The output will look something like:
 
