@@ -67,8 +67,8 @@ class ManhattanDistance(Distance):
         Compute the distance between two images. Identical images will have a distance of zero.
 
         Args:
-            pixels1 (list): The pixels respresenting the first image.
-            pixels2 (list): The pixels respresenting the second image.
+            pixels1 (list): The pixels representing the first image.
+            pixels2 (list): The pixels representing the second image.
         """
         assert len(pixels1) == len(pixels2), "Pixels lists should be the same length"
 
@@ -108,7 +108,7 @@ class BasicClassifier(Classifier):
         Predict the digit that the image corresponds to.
 
         Args:
-            pixels (list): The pixels respresenting the image.
+            pixels (list): The pixels representing the image.
         """
         current_best = None
         shortest = 1000000
