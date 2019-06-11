@@ -22,10 +22,8 @@ predicted_labels = clf.predict(validation_pixels)
 
 # Measure the accuracy of the model
 labels_count = len(validation_labels)
-matches_count = 0
 
-for i in range (0, labels_count):
-    matches_count += 1 if predicted_labels[i] == validation_labels[i] else 0
+matches_count = sum(1 for p, v in zip(predicted_labels, validation_labels) if p == v)
 
 print ("Accuracy: {0:.02%}".format(matches_count / labels_count)) 
 
@@ -35,4 +33,3 @@ image.shape = (28, 28)
 pt.imshow(255 - image, cmap = 'gray')
 print("Digit: ", clf.predict([validation_pixels[8]])[0])
 pt.show()
-
