@@ -1,6 +1,5 @@
 import traceback
-
-from datetime import datetime
+import time
 
 class Observation:
     """
@@ -159,8 +158,9 @@ class Evaluator:
             return 0.0
 
 def main():
+
     try:
-        t0 = datetime.now()
+        t0 = time.time()
 
         distance = ManhattanDistance()
         classifier = BasicClassifier(distance)
@@ -176,7 +176,9 @@ def main():
         correct = Evaluator().correct(validation, classifier)
         print("Correctly classified: {0:.02%}".format(correct))
 
-        print("Time elapsed = {0:f} sec.\n".format((datetime.now() - t0).seconds))
+        t1 = time.time()
+
+        print("Time elapsed = {0:0.2f} sec.\n".format(t1 - t0))
 
     except Exception:
         traceback.print_exc()
